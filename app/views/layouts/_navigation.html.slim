@@ -6,17 +6,17 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
       span.navbar-toggler-icon
     #navbarResponsive.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
-        li.nav-item.active
-          a.nav-link[href="#"]
+        li[class="nav-item #{active_class(root_path)}"]
+          = link_to root_path, class: 'nav-link'
             | Home 
             span.sr-only
               | (current)
-        li.nav-item
-          a.nav-link[href="#"]
+        li[class="nav-item #{active_class(about_path)}"]
+          = link_to about_path, class: 'nav-link'
             | About
-        li.nav-item
-          a.nav-link[href="#"]
-            | Services
+        li[class="nav-item #{active_class(blog_path)}"]
+          = link_to blog_path, class: 'nav-link'
+            | Blog
         li.nav-item
           a.nav-link[href="#"]
             | Contact
