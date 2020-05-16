@@ -1,1 +1,43 @@
-h1 Home page
+header
+  #carouselExampleIndicators.carousel.slide[data-ride="carousel"]
+    ol.carousel-indicators
+      li.active[data-target="#carouselExampleIndicators" data-slide-to="0"]
+      li[data-target="#carouselExampleIndicators" data-slide-to="1"]
+      li[data-target="#carouselExampleIndicators" data-slide-to="2"]
+    .carousel-inner[role="listbox"]
+      .carousel-item.active[style=carousel_image('coder.jpg')]
+        .carousel-caption.d-none.d-md-block
+          h3.display-4
+            | Coding
+          p.lead
+            | The best job is well-paid hobby.
+      .carousel-item[style=carousel_image('every_one_can_code.jpg')]
+        .carousel-caption.d-none.d-md-block
+          h3.display-4
+            | A littly kindness
+          p.lead
+            | and Everone can code.
+      .carousel-item[style=carousel_image('agile_scrum.jpg')]
+        .carousel-caption.d-none.d-md-block
+          h3.display-4
+            | Methodology
+          p.lead
+            | is the right path to success.
+    a.carousel-control-prev[href="#carouselExampleIndicators" role="button" data-slide="prev"]
+      span.carousel-control-prev-icon[aria-hidden="true"]
+      span.sr-only
+        | Previous
+    a.carousel-control-next[href="#carouselExampleIndicators" role="button" data-slide="next"]
+      span.carousel-control-next-icon[aria-hidden="true"]
+      span.sr-only
+        | Next
+
+section.py-5
+  .container
+    h1.font-weight-light
+      | Half Page Image Slider
+    p.lead
+      | The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from 
+      a[href="https://unsplash.com"]
+        | Unsplash
+      | !
