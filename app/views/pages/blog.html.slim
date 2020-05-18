@@ -1,3 +1,17 @@
 .container.py-5
   h1.font-weight-light
-    | There will be my posts
+    | Articles
+
+  hr
+.container
+  .row
+    .col-md-12
+      .articles-card style='border: 1px solid black; padding: 10px'
+        .row
+          .col-sm-4
+            = link_to '#'
+              = image_tag 'default', class: 'img-fluid rounded float-left'
+          .col-sm-8
+            h4 Title
+            p Published date:
+            p Description goes here ... of course some styling will be added ...
