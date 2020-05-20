@@ -11,4 +11,9 @@ html
     header
       = render 'layouts/navigation'
     main.py-5[role="main"]
+      .container
+        p.notice
+          = notice
+        p.alert
+          = alert
       = yield
